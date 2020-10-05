@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run --rm -it \
+  -v $PWD:$PWD \
+  -w $PWD \
+  breakthewall/commit sh -c "
+     npm init
+  && commitizen init cz-conventional-changelog --save-dev --save-exact
+  "

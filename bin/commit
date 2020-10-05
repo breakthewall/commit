@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run --rm -it \
+  -v $HOME/.gitconfig:/etc/gitconfig:ro \
+  -v $PWD:$PWD \
+  -w $PWD \
+  breakthewall/commit sh -c "
+    git cz -am
+  "
