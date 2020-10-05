@@ -6,3 +6,6 @@ docker build -t breakthewall/commit .
 
 ### Init
 docker-compose run init
+
+### Run
+docker-compose 
